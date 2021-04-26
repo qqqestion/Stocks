@@ -12,3 +12,6 @@ Stocks является проектной частью вступительно
 - Navigation Component
 - Dagger Hilt
 - Coil
+
+## Установка
+Для запуска вам потребуется ваш собственный API ключ, который надо поместить в gradle.properties.

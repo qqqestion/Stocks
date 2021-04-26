@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivStockImage"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="70dp"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            tools:src="@tools:sample/avatars" />-->
+
+        <TextView
+            android:id="@+id/tvStockSymbol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="YNDX"
+            android:textColor="@color/font_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/tvStockName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Yandex, LLC"
+            android:textColor="@color/font_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tvStockPriceChange"
+            app:layout_constraintStart_toStartOf="@id/tvStockSymbol"
+            app:layout_constraintTop_toBottomOf="@id/tvStockSymbol"
+            tools:text="@tools:sample/full_names" />
+
+        <ImageView
+            android:id="@+id/ivFavourite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_baseline_star_24_simple"
+            app:layout_constraintBottom_toBottomOf="@id/tvStockSymbol"
+            app:layout_constraintEnd_toStartOf="@id/tvStockPrice"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/tvStockSymbol"
+            app:layout_constraintTop_toTopOf="@id/tvStockSymbol" />
+
+        <TextView
+            android:id="@+id/tvStockPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:fontFamily="@font/montserrat"
+            android:text="$3 204"
+            android:textColor="@color/font_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvStockSymbol" />
+
+        <TextView
+            android:id="@+id/tvStockPriceChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="+$0.12 (1,15%)"
+            android:textColor="@color/stock_item_price_change_up"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStockPrice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
